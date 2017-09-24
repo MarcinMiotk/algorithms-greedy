@@ -60,4 +60,17 @@ public class SolutionTest {
         assertFalse(Solution.isValidTriangle(new long[] { 1L, 2L, 3L}));
     }
 
+
+    @Test
+    public void official_3() {
+        String input = "5\n" +
+                "3 9 2 15 3\n";
+
+        ByteArrayInputStream in = new ByteArrayInputStream(input.getBytes());
+        System.setIn(in);
+
+        Solution.main(null);
+        assertEquals("2 3 3", outContent.toString().trim());
+    }
+
 }

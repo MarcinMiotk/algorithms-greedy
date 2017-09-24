@@ -1,5 +1,6 @@
 package problem.Maximum_Perimeter_Triangle;
 
+import java.util.Arrays;
 import java.util.Scanner;
 import java.util.concurrent.atomic.AtomicReference;
 
@@ -14,6 +15,7 @@ public class Solution {
             }
             long[] result = MaximumPerimeterTriangle(sticks);
             if(result!=null) {
+                Arrays.sort(result);
                 System.out.println(result[0]+" "+result[1]+" "+result[2]);
             } else {
                 System.out.println("-1");
