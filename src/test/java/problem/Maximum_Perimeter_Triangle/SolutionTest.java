@@ -52,4 +52,12 @@ public class SolutionTest {
         assertEquals("-1", outContent.toString().trim());
     }
 
+
+    @Test
+    public void isValidTriangle() {
+        assertTrue(Solution.isValidTriangle(new long[] { 1L, 1L, 1L}));
+        assertTrue(Solution.isValidTriangle(new long[] { 1L, 3L, 3L}));
+        assertFalse(Solution.isValidTriangle(new long[] { 1L, 2L, 3L}));
+    }
+
 }

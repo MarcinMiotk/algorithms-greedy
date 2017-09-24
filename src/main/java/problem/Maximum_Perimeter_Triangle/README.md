@@ -42,3 +42,12 @@ Tworzę wszystkie kombinacje 3 elementowe bez powtórzeń ze zbioru 5 elementowe
     
 
 48*49*50/6 =   
+
+
+====================
+
+Czy to trojkat?
+
+a<=b+c
+b<=a+c
+c<=a+b
