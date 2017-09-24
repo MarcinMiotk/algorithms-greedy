@@ -7,9 +7,7 @@ class ArrayRotation {
         do {
             if(indexes[end]<max) {
                 indexes[end]++;
-
                 boolean keepRotating = false;
-
                 for(int afterRotated = end+1; afterRotated<indexes.length; afterRotated++) {
                     indexes[afterRotated] = indexes[afterRotated-1]+1;
                     if(indexes[afterRotated]>max) {
@@ -17,7 +15,6 @@ class ArrayRotation {
                         keepRotating = true;
                     }
                 }
-
                 if(!keepRotating) {
                     break;
                 }
